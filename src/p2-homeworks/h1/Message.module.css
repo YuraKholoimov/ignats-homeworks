@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf9b7;
+    height: 100px;
+    width: 400px;
+}
+
+.incoming {
+    width: 70%;
+    height: 100%;
+    padding: 10px 50px;
+}
+
+.bubble {
+    /*position: relative;*/
+    display: flex;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #424242;
+}
+
+.avatar img {
+    height: 70px;
+    width: 70px;
+    margin: 0px -30px 0px 15px;
+    border-radius: 50%;
+}
+.name {
+    font-size: 14px;
+    color: #7279ff;
+    padding: 5px;
+}
+
+.message {
+    padding: 5px;
+}
+
+.time {
+    font-size: 12px;
+    align-self: end;
+}
