@@ -1,12 +1,14 @@
 import React from 'react'
 import Message from "./Message";
+import {AlternativeMessage} from "./AlternativeMessage";
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'Some Name',
-    message: 'Well you should get your Dad a cologne. Here smell it. Oh wait! ...',
+    message: 'some text',
     time: '22:00',
 }
+
 
 function HW1( ) {
     return (
@@ -24,8 +26,8 @@ function HW1( ) {
             />
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            для личного творчества, могу проверить
+            <AlternativeMessage messageData={messageData} />
             <hr/>
         </div>
     )

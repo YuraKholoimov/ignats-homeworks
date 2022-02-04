@@ -6,22 +6,35 @@
     height: 100px;
     width: 400px;
 }
+.containerOut {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #edf9b7;
+    height: 100px;
+    width: 400px;
+}
 
 .incoming {
     width: 70%;
     height: 100%;
-    padding: 10px 50px;
+    padding: 10px 40px;
+}
+.outcoming {
+    width: 70%;
+    height: 100%;
 }
 
 .bubble {
-    /*position: relative;*/
     display: flex;
     color: white;
     font-size: 0.7em;
     padding: 10px 10px 10px 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 20px;
-    background: #424242;
+    background: rgba(98, 97, 97, 0.7);
+    justify-content: space-between;
 }
 
 .avatar img {
