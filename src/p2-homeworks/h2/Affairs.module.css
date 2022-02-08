@@ -1,3 +1,23 @@
-.someClass {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    border: 1px solid grey;
+    padding: 10px;
 
+}
+.affairItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 2px;
+}
+.affairItem:last-child {
+    padding-bottom: 10px;
+}
+.affairButtons {
+    display: flex;
+    justify-content: space-between;
 }
