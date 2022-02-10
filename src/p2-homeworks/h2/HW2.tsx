@@ -4,14 +4,14 @@ import Affairs from './Affairs'
 // types
 export type AffairPriorityType = "high" | "middle" | "low"
 export type AffairType = {
-        _id: number
-        name: string
-        priority: string
-    }
+    _id: number
+    name: string
+    priority: string
+}
 export type FilterType = 'all' | AffairPriorityType
 
 // constants
-const defaultAffairs:Array<AffairType> = [ // need to fix any
+const defaultAffairs: Array<AffairType> = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'middle'},
@@ -22,15 +22,13 @@ const defaultAffairs:Array<AffairType> = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs:Array<AffairType>, filter:FilterType):any => { // need to fix any
-    if (filter === 'all') return affairs // need to fix
-    else if (filter === 'high') return affairs.filter(el => el.priority == 'high')
-    else if (filter === 'middle') return affairs.filter(el => el.priority == 'middle')
-    else if (filter === 'low') return affairs.filter(el => el.priority == 'low')
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
+    if (filter === 'all') return affairs// need to fix
+    else return affairs.filter((a) => a.priority == filter)
 }
 
-export const deleteAffair = (affairs:Array<AffairType>, _id:number):Array<AffairType> => { // need to fix any
-    return  affairs.filter(affair => affair._id !== _id)
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
+    return affairs.filter(affair => affair._id !== _id)
 }
 
 function HW2() {
