@@ -17,8 +17,10 @@ function HW4() {
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
-    console.log(checked)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setChecked(e.currentTarget.checked)
+    }
+
     return (
         <div>
             <hr/>
@@ -30,7 +32,6 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
@@ -46,8 +47,7 @@ function HW4() {
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
+                >delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 <SuperButton disabled>
@@ -59,8 +59,7 @@ function HW4() {
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
-                >
-                    some text {"ChekBox"}
+                >some text {"ChekBox"}
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
