@@ -1,5 +1,6 @@
 import React from 'react'
 import {homeWorkReducer} from '../homeWorkReducer'
+import {log} from "util";
 
 let initialState: any[] // need to fix any
 
@@ -17,16 +18,15 @@ beforeEach(() => {
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
 
-    console.log(newState)
-    // expect(...).toBe(...)
+    expect(newState.map(i => i.name)[0][0] == "А").toBeTruthy()
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
 
-
+    expect(newState.map(i => i.name)[0][0]  > "А").toBeTruthy()
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
 
-
+expect(newState.map(i => i.age > 18)).toBeTruthy()
 })
