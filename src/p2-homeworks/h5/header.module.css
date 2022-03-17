@@ -16,6 +16,7 @@
     text-align: center;
     background: none;
     border: 2px solid #eeeded;
+    color: #ffffff;
 }
 
 .btnMenu:active {
@@ -41,18 +42,16 @@
     animation: mymove 1s ease-in;
 }
 
-.navBarModal button {
-
-}
 
 a {
     text-decoration: none;
-    color: gray;
+    color: #ffffff;
 }
 
 .active {
     text-decoration: none;
-    color: #c3102b;
+    color: #02b26f;
+    font-weight: 800;
 }
 
 @keyframes mymove {

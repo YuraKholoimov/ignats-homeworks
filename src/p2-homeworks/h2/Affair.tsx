@@ -1,9 +1,11 @@
 import React from 'react'
 import style from "./Affairs.module.css"
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import {AffairType} from "./HW2";
 
 type AffairPropsType = {
     // key не нужно типизировать
-    affair: any // need to fix any
+    affair: AffairType // need to fix any
     deleteAffairCallback:(_id:number)=>void // need to fix any
 }
 
@@ -12,9 +14,13 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div className={style.affairItem}>
-            <div>// show some text</div>
+            <div>{props.affair.name}</div>
             <div>
-                <button onClick={deleteCallback}>X</button>
+                <SuperButton
+                    style={{width: "40px"}}
+                    onClick={deleteCallback}>
+                    X
+                </SuperButton>
             </div>
         </div>
     )
