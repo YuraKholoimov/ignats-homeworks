@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #edf9b7;
     height: 100px;
     width: 400px;
 }
@@ -11,9 +10,11 @@
     justify-content: center;
     flex-direction: row-reverse;
     align-items: center;
-    background: #edf9b7;
     height: 100px;
     width: 400px;
+}
+.bubble:hover {
+    box-shadow: 0px 0px 0px 1px #ffffff;
 }
 
 .incoming {
@@ -45,7 +46,7 @@
 }
 .name {
     font-size: 14px;
-    color: #7279ff;
+    color: #9b9fff;
     padding: 5px;
 }
 

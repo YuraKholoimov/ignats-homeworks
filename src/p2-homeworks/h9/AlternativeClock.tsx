@@ -1,4 +1,5 @@
 import React from 'react'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
 function AlternativeClock() {
@@ -19,10 +20,11 @@ function AlternativeClock() {
 
     return (
         <div>
-            {num}
-            <button onClick={start}>start</button>
-            <button onClick={stop}>stop</button>
-            <button onClick={reset}>reset</button>
+            <div style={{fontSize: "32px"}}>{num}</div>
+            <SuperButton onClick={start}>start</SuperButton>
+            <SuperButton onClick={stop}>stop</SuperButton>
+            <SuperButton onClick={reset}>reset</SuperButton>
+
         </div>
     )
 }
