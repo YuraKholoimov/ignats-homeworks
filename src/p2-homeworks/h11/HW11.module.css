@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 200px;
+}
+
+.values {
+    background-color: #ffffff;
+    color: #00192e;
+    font-weight: bold;
+    font-size: 18px;
+    width: 42%;
+    position: relative;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
