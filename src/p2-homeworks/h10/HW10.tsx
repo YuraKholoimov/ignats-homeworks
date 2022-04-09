@@ -24,7 +24,8 @@ function HW10() {
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {loading
+            {
+                loading
                 ? (
                     <div style={{margin: "20px"}}>
                         <img src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="Loading"

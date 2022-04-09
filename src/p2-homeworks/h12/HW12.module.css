@@ -21,3 +21,19 @@
 .some-text {
     color: darkslateblue;
 }
+
+.blue {
+    background-color: #3e63ff;
+}
+
+.blue-text  {
+    color: #b3b3b3;
+}
+
+.yellow {
+    background-color: #f7ff00;
+}
+
+.yellow-text {
+    color: #002e2e;
+}

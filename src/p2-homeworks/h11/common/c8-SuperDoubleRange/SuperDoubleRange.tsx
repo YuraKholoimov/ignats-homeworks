@@ -35,7 +35,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                     <div className={s.sliderTrack}></div>
                     {
                         commonValue && commonValue.map((range, i) => {
-
                             return <input
                                 key={i}
                                 value={commonValue[i]}
