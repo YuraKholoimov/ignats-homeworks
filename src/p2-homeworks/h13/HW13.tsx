@@ -13,17 +13,21 @@ function Request() {
     }
 
     const sendRequest = () => {
+
         RequestsApi(success)
-            .then((res)=> {
-                if (res.ok) return res.json()
-                else return res.json()
+            .then((res: any)=> {
+                if (!res.ok) throw Error(res.statusText)
+               return res.json()
             })
             .then(data => setResponse(data.errorText))
+            .catch(error => {
+                setResponse(error.message)
+            })
     }
 
     return (
         <div className={s.block}>
-            <input type="text" value={response}/>
+            <input type="text" value={response} readOnly={true}/>
             <div><input type="checkbox" onChange={onChangeHandler}/>
                 <SuperButton onClick={sendRequest}>Send</SuperButton></div>
         </div>
