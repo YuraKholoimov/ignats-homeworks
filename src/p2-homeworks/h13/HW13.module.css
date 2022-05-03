@@ -1,0 +1,21 @@
+.block {
+    width: 200px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.block button {
+    width: 100px;
+}
+
+.block [type="text"] {
+    width: 250px;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+.block [type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
